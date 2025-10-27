@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\models\\receprion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\models\\receprion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\pages\\addpatient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\addpatient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\pages\\reception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\reception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\pages\\reception.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\reception.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Receprion.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Models\\Receprion.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\Models\\Receprion.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Models\\Receprion.cs",
+              "RelativeToolTip": "TRPO_8\\Models\\Receprion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T03:10:20.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Models\\Doctor.cs",
+              "RelativeToolTip": "TRPO_8\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T03:10:20.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\AssemblyInfo.cs",
+              "RelativeToolTip": "TRPO_8\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T03:10:16.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddPatient.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Pages\\AddPatient.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\AddPatient.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Pages\\AddPatient.xaml",
+              "RelativeToolTip": "TRPO_8\\Pages\\AddPatient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-23T04:50:51.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reception.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Pages\\Reception.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\Reception.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Pages\\Reception.xaml",
+              "RelativeToolTip": "TRPO_8\\Pages\\Reception.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-23T04:41:23.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reception.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Pages\\Reception.xaml.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\Reception.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Pages\\Reception.xaml.cs",
+              "RelativeToolTip": "TRPO_8\\Pages\\Reception.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T03:39:25.157Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
