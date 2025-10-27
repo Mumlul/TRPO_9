@@ -1,12 +1,68 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\styles\\themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\styles\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\trpo_8\\trpo_8\\styles\\ui\\pr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\ui\\pr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pr.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Styles\\UI\\pr.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Styles\\UI\\pr.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Styles\\UI\\pr.xaml",
+              "RelativeToolTip": "TRPO_8\\Styles\\UI\\pr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-27T04:45:10.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LightTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Styles\\Themes\\LightTheme.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Styles\\Themes\\LightTheme.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Styles\\Themes\\LightTheme.xaml",
+              "RelativeToolTip": "TRPO_8\\Styles\\Themes\\LightTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-27T04:04:37.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\TRPO_8\\TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
+              "RelativeToolTip": "TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-27T04:04:22.449Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
