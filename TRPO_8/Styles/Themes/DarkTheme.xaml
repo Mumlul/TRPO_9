@@ -1,5 +1,37 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-   <!--Тут просто прописываются цвета которые будут использоваться у меня в проекте-->
+    
+    <Color x:Key="WindowBackgroundColor">#1F2937</Color>
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}"/>
+
+    <Color x:Key="PrimaryTextColor">#F9FAFB</Color>
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="{StaticResource PrimaryTextColor}"/>
+
+    <Color x:Key="SecondaryTextColor">#D1D5DB</Color>
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="{StaticResource SecondaryTextColor}"/>
+
+    <Color x:Key="ButtonStandardNormalColor">#374151</Color>
+    <Color x:Key="ButtonStandardHoverColor">#4B5563</Color>
+    <Color x:Key="ButtonStandardPressedColor">#6B7280</Color>
+    <SolidColorBrush x:Key="ButtonStandardNormalBrush" Color="{StaticResource ButtonStandardNormalColor}"/>
+    <SolidColorBrush x:Key="ButtonStandardHoverBrush" Color="{StaticResource ButtonStandardHoverColor}"/>
+    <SolidColorBrush x:Key="ButtonStandardPressedBrush" Color="{StaticResource ButtonStandardPressedColor}"/>
+
+    <Color x:Key="ButtonAddNormalColor">#10B981</Color>
+    <Color x:Key="ButtonAddHoverColor">#059669</Color>
+    <Color x:Key="ButtonAddPressedColor">#047857</Color>
+    <SolidColorBrush x:Key="ButtonAddNormalBrush" Color="{StaticResource ButtonAddNormalColor}"/>
+    <SolidColorBrush x:Key="ButtonAddHoverBrush" Color="{StaticResource ButtonAddHoverColor}"/>
+    <SolidColorBrush x:Key="ButtonAddPressedBrush" Color="{StaticResource ButtonAddPressedColor}"/>
+
+    <Color x:Key="ButtonDeleteNormalColor">#EF4444</Color>
+    <Color x:Key="ButtonDeleteHoverColor">#DC2626</Color>
+    <Color x:Key="ButtonDeletePressedColor">#B91C1C</Color>
+    <SolidColorBrush x:Key="ButtonDeleteNormalBrush" Color="{StaticResource ButtonDeleteNormalColor}"/>
+    <SolidColorBrush x:Key="ButtonDeleteHoverBrush" Color="{StaticResource ButtonDeleteHoverColor}"/>
+    <SolidColorBrush x:Key="ButtonDeletePressedBrush" Color="{StaticResource ButtonDeletePressedColor}"/>
+
+    <Color x:Key="AccentColor">#3B82F6</Color>
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
     
 </ResourceDictionary>

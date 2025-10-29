@@ -1,86 +1,115 @@
-﻿<Page x:Class="TRPO_8.Pages.Reception"
+﻿
+<Page x:Class="TRPO_8.Pages.Reception"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d"
-      Title="Reception" Height="600" Width="800">
-    <Grid>
-        <Border  Margin="5,0,5,10" Grid.Column="1" Background="#F8F8F8" BorderBrush="#CCCCCC" BorderThickness="1" Padding="10">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+      Title="Reception"
+      Background="{DynamicResource WindowBackgroundBrush}">
 
-                <StackPanel Name="data"  Grid.Row="0">
-                    <TextBlock  Text="Прием" FontWeight="Bold" 
-                        HorizontalAlignment="Center" Margin="0,0,0,10"/>
-                    <TextBlock  Text="{Binding ID}"/>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <Grid Style="{StaticResource RootGrid}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/> 
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/> 
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>    
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Text="Приём пациента"
+                       Style="{StaticResource PageTitle}"/>
+
+            <StackPanel Name="data" Grid.Row="1" Style="{StaticResource SectionContainer}">
+                <TextBlock Text="Текущий доктор" Style="{StaticResource FormSectionTitle}" />
+                <UniformGrid Columns="2" Style="{StaticResource UniformGridSpacing}">
+                    <StackPanel>
+                        <TextBlock Text="Фамилия:" Style="{StaticResource FormLabel}"/>
+                        <TextBlock Text="{Binding LastName}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Имя:" Style="{StaticResource FormLabel}"/>
+                        <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Отчество:" Style="{StaticResource FormLabel}"/>
+                        <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Специальность:" Style="{StaticResource FormLabel}"/>
+                        <TextBlock Text="{Binding Specialisation}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </StackPanel>
+                </UniformGrid>
+            </StackPanel>
+
+            <Border Grid.Row="2" Style="{StaticResource FormBorder}">
+                <StackPanel>
+                    <TextBlock Text="Пациент" Style="{StaticResource FormSectionTitle}"/>
+                    <UniformGrid Columns="2" Style="{StaticResource UniformGridSpacing}">
+                        <StackPanel>
+                            <TextBlock Text="Фамилия:" Style="{StaticResource FormLabel}"/>
+                            <TextBlock Text="{Binding LastName}" MouseDown="Edit_patient" Style="{StaticResource PrimaryTextBlock}"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Имя:" Style="{StaticResource FormLabel}"/>
+                            <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Отчество:" Style="{StaticResource FormLabel}"/>
+                            <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="Дата рождения:" Style="{StaticResource FormLabel}"/>
+                            <TextBlock Text="{Binding Birthday, StringFormat='{}{0:dd.MM.yyyy}'}" Style="{StaticResource PrimaryTextBlock}"/>
+                        </StackPanel>
+                    </UniformGrid>
                 </StackPanel>
-                
-                
+            </Border>
 
-                <StackPanel Grid.Row="1" MaxHeight="400">
+            <Border Grid.Row="3" Style="{StaticResource FormBorder}">
+                <StackPanel>
+                    <TextBlock Text="Новый приём" Style="{StaticResource FormSectionTitle}"/>
 
-                    <DockPanel Margin="0,5">
-                        <TextBlock Text="Фамилия" Width="120" Margin="0,0,5,0"/>
-                        <TextBlock Text="{Binding LastName}" MouseDown="Edit_patient" Height="25"/>
+                    <DockPanel Style="{StaticResource FormRow}">
+                        <TextBlock Text="Диагноз:" Style="{StaticResource FormLabel}" Width="120"/>
+                        <TextBox x:Name="Diagnos" Style="{StaticResource FormMultilineTextBox}"/>
                     </DockPanel>
-                    <DockPanel Margin="0,5">
-                        <TextBlock Text="Имя" Width="120" Margin="0,0,5,0"/>
-                        <TextBlock Text="{Binding Name}" Height="25"/>
+
+                    <DockPanel Style="{StaticResource FormRow}">
+                        <TextBlock Text="Рекомендации:" Style="{StaticResource FormLabel}" Width="120"/>
+                        <TextBox x:Name="Recomendations" Style="{StaticResource FormMultilineTextBox}"/>
                     </DockPanel>
-                    <DockPanel Margin="0,5">
-                        <TextBlock Text="Отчество" Width="120" Margin="0,0,5,0"/>
-                        <TextBlock Text="{Binding MiddleName}" Height="25"/>
-                    </DockPanel>
-                    <DockPanel Margin="0,5">
-                        <TextBlock Text="Дата рождения" Width="120" Margin="0,0,5,0"/>
-                        <DatePicker SelectedDate="{Binding Birthday}" Height="25"/>
-                    </DockPanel>
-                    <DockPanel Margin="0,5">
-                        <TextBlock Text="Диагноз" Width="120" Margin="0,0,5,0"/>
-                        <TextBox Name="Diagnos" Height="60" />
-                    </DockPanel>
-                    <DockPanel Margin="0,5">
-                        <TextBlock Text="Рекомендации" Width="120" Margin="0,0,5,0"/>
-                        <TextBox Name="Recomendations" Height="60" />
-                    </DockPanel>
-                    
-                    <ListView
-                        Name="Spisok"
-                        Height="100"
-                        ItemsSource="{Binding ReceptionsList}" 
-                        >
+
+                    <Button Content="Добавить приём" Style="{StaticResource AddButton}" Height="35" Click="ButtonBase_OnClick"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="4" Style="{StaticResource FormBorder}">
+                <StackPanel>
+                    <TextBlock Text="История приёмов" Style="{StaticResource FormSectionTitle}"/>
+                    <ListView x:Name="Spisok"
+                              ItemsSource="{Binding ReceptionsList}"
+                              MaxHeight="300"
+                              >
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="Идентификатор Доктора: "/>
-                                        <TextBlock Text="{Binding DoctorID}"/>
+                                <Border Style="{StaticResource ListItemBorder}">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Date, StringFormat='Дата: {0:dd.MM.yyyy HH:mm}'}" Style="{StaticResource PrimaryTextBlock}"/>
+                                        <TextBlock Text="{Binding DoctorID, StringFormat='Доктор ID: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
+                                        <TextBlock Text="{Binding Diagons, StringFormat='Диагноз: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
+                                        <TextBlock Text="{Binding Recomendation, StringFormat='Рекомендации: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
                                     </StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="Дата: "/>
-                                        <TextBlock Text="{Binding Date}"/>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="Диагноз: "/>
-                                        <TextBlock Text="{Binding Diagons}"/>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="Рекомендации: "/>
-                                        <TextBlock Text="{Binding Recomendation}"/>
-                                    </StackPanel>
-                                </StackPanel>
+                                </Border>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-
-                    <Button Content="Добавить прием" Click="ButtonBase_OnClick"/>
                 </StackPanel>
-            </Grid>
-        </Border>
-    </Grid>
+            </Border>
+
+        </Grid>
+    </ScrollViewer>
 </Page>

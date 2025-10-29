@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:TRPO_8"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+                 <ResourceDictionary Source="Styles/Themes/LightTheme.xaml"/>
+                 <ResourceDictionary Source="Styles/UI/pr.xaml"/>
+             </ResourceDictionary.MergedDictionaries>
+         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -3,37 +3,44 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegisterDoctor">
+      Title="RegisterDoctor"
+      Background="{DynamicResource WindowBackgroundBrush}">
 
-    <DockPanel>
-        <Border BorderBrush="#CCCCCC" BorderThickness="1" Margin="0,0,0,10" Padding="10" Grid.Row="1" Grid.Column="0">
-            <StackPanel>
-                <TextBlock Text="Регистрация доктора" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
-                <DockPanel Margin="0,5">
-                    <TextBlock Text="Фамилия" Width="100" Margin="0,0,5,0"/>
-                    <TextBox Text="{Binding LastName}" Height="25"/>
-                </DockPanel>
-                <DockPanel Margin="0,5">
-                    <TextBlock Text="Имя" Width="100" Margin="0,0,5,0"/>
-                    <TextBox Text="{Binding Name}" Height="25"/>
-                </DockPanel>
-                <DockPanel Margin="0,5">
-                    <TextBlock Text="Отчество" Width="100" Margin="0,0,5,0"/>
-                    <TextBox Text="{Binding MiddleName}" Height="25"/>
-                </DockPanel>
-                <DockPanel Margin="0,5">
-                    <TextBlock Text="Специальность" Width="100" Margin="0,0,5,0"/>
-                    <TextBox Text="{Binding Specialisation}" Height="25"/>
-                </DockPanel>
-                <DockPanel Margin="0,5">
-                    <TextBlock Text="Пароль" Width="100" Margin="0,0,5,0"/>
-                    <TextBox Text="{Binding Password}" Height="25"/>
-                </DockPanel>
-                <Button Content="Сохранить доктора" Click="Add_Doctor" Margin="0,10,0,0" Height="30"/>
-            </StackPanel>
-        </Border>
-    </DockPanel>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+            <Border Style="{StaticResource FormBorder}">
+                <StackPanel>
+                    <TextBlock Text="Регистрация доктора" Style="{StaticResource FormHeader}"/>
+
+                    <DockPanel Style="{StaticResource FormFieldPanel}">
+                        <TextBlock Text="Фамилия" Style="{StaticResource FormLabel}"/>
+                        <TextBox Text="{Binding LastName}" Style="{StaticResource FormTextBox}"/>
+                    </DockPanel>
+
+                    <DockPanel Style="{StaticResource FormFieldPanel}">
+                        <TextBlock Text="Имя" Style="{StaticResource FormLabel}"/>
+                        <TextBox Text="{Binding Name}" Style="{StaticResource FormTextBox}"/>
+                    </DockPanel>
+
+                    <DockPanel Style="{StaticResource FormFieldPanel}">
+                        <TextBlock Text="Отчество" Style="{StaticResource FormLabel}"/>
+                        <TextBox Text="{Binding MiddleName}" Style="{StaticResource FormTextBox}"/>
+                    </DockPanel>
+
+                    <DockPanel Style="{StaticResource FormFieldPanel}">
+                        <TextBlock Text="Специальность" Style="{StaticResource FormLabel}"/>
+                        <TextBox Text="{Binding Specialisation}" Style="{StaticResource FormTextBox}"/>
+                    </DockPanel>
+
+                    <DockPanel Style="{StaticResource FormFieldPanel}">
+                        <TextBlock Text="Пароль" Style="{StaticResource FormLabel}"/>
+                        <TextBox Text="{Binding Password}" Style="{StaticResource FormTextBox}"/>
+                    </DockPanel>
+
+                    <Button Content="Сохранить доктора" Style="{StaticResource SaveButton}" Click="Add_Doctor"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

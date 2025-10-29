@@ -8,5 +8,6 @@
         Title="MainWindow" Height="600" Width="800">
     <Grid>
         <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        
     </Grid>
 </Window>

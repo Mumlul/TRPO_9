@@ -7,8 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800"
       Title="MainPage"
-      Background="#F8F8F8"
-      >
+      Background="{DynamicResource WindowBackgroundBrush}">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -24,70 +23,90 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Name="Info" Background="#F8F8F8" BorderBrush="#CCCCCC" BorderThickness="1" Padding="10" Margin="0,0,0,10">
+        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource SectionBorder}" Name="Info">
             <StackPanel>
-                <TextBlock Text="Текущий доктор" FontWeight="Bold"  HorizontalAlignment="Center" Margin="0,0,0,10"/>
-                <DockPanel Margin="0,3">
-                    <TextBlock Text="Фамилия:" Width="80" Margin="0,0,5,0"/>
-                    <TextBlock Text="{Binding LastName}" TextWrapping="Wrap"/>
-                </DockPanel>
-                <DockPanel Margin="0,3">
-                    <TextBlock Text="Имя:" Width="80" Margin="0,0,5,0"/>
-                    <TextBlock Text="{Binding Name}" TextWrapping="Wrap"/>
-                </DockPanel>
-                <DockPanel Margin="0,3">
-                    <TextBlock Text="Отвество:" Width="80" Margin="0,0,5,0"/>
-                    <TextBlock Text="{Binding MiddleName}" TextWrapping="Wrap"/>
-                </DockPanel>
-                <DockPanel Margin="0,3">
-                    <TextBlock Text="Специальность:"  Margin="0,0,5,0"/>
-                    <TextBlock Text="{Binding Specialisation}" TextWrapping="Wrap"/>
-                </DockPanel>
+                <TextBlock Text="Текущий доктор"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Style="{StaticResource PrimaryTextBlock}"/>
+                <StackPanel>
+                    <DockPanel>
+                        <TextBlock Text="Фамилия:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="{Binding LastName}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <TextBlock Text="Имя:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <TextBlock Text="Отчество:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <TextBlock Text="Специальность:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="{Binding Specialisation}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </DockPanel>
+                </StackPanel>
             </StackPanel>
         </Border>
 
-        <Border Name="ll" Grid.Row="1" Grid.ColumnSpan="3" Background="#F8F8F8" BorderBrush="#CCCCCC" BorderThickness="1" Padding="10" Margin="0,0,0,10">
-            <ListView
-                Height="300"
-                ItemsSource="{Binding Patients}" 
-                SelectedItem="{Binding SelectedPatient}"
-                MouseDoubleClick="Add_Reception"
-                >
+        
+        <Border Grid.Row="1" Grid.ColumnSpan="3" Style="{StaticResource SectionBorder}" Name="ll">
+            <ListView ItemsSource="{Binding Patients}"
+                      SelectedItem="{Binding SelectedPatient}"
+                      MouseDoubleClick="Add_Reception"
+                     >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Идентификатор: "/>
-                                <TextBlock Text="{Binding ID}"/>
+                                <TextBlock Text="Идентификатор: " Style="{StaticResource SecondaryTextBlock}"/>
+                                <TextBlock Text="{Binding ID}" Style="{StaticResource PrimaryTextBlock}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="ФИО: "/>
-                                <TextBlock Text="{Binding FullName}"/>
+                                <TextBlock Text="ФИО: " Style="{StaticResource SecondaryTextBlock}"/>
+                                <TextBlock Text="{Binding FullName}" Style="{StaticResource PrimaryTextBlock}"/>
+
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Дата рождения: "/>
-                                <TextBlock Text="{Binding Name}"/>
+                                <TextBlock Text="Дата рождения: " Style="{StaticResource SecondaryTextBlock}"/>
+                                <TextBlock Text="{Binding BirthDate}" Style="{StaticResource PrimaryTextBlock}"/>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </Border>
+
         
-        <Button Grid.Row="2"   Content="Добавить нового пациента" Click="ButtonBase_OnClick" Margin="10"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="Изменить данные" Click="Change_data" Margin="10"/>
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource ButtonPanel}">
+            <Button Content="Добавить пациента"
+                    Style="{StaticResource AddButton}"
+                    Click="ButtonBase_OnClick"/>
+            <Button Content="Изменить данные"
+                    Style="{StaticResource MainButton}"
+                    Click="Change_data"/>
+            <Button Content="Удалить"
+                    Style="{StaticResource DeleteButton}"
+                    />
+        </StackPanel>
 
-
-
-        <Border Grid.Row="4" Name="Statistic" Grid.Column="0" Grid.ColumnSpan="3" Background="#E8E8E8" BorderBrush="#CCCCCC" 
-         BorderThickness="1"  VerticalAlignment="Bottom" Height="30">
-            <DockPanel Margin="0,5">
-                <TextBlock Text="Докторов в системе:" Margin="0,0,5,0"/>
-                <TextBlock Text="{Binding CountDoctors}"/>
-                <TextBlock Text="Пациентов в системе:"/>
-                <TextBlock Text="{Binding CountPatients}"/>
+        
+        <Border Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Style="{StaticResource StatisticBar}"
+                Name="Statistic">
+            <DockPanel HorizontalAlignment="Center">
+                <TextBlock Text="Докторов в системе: "
+                           Style="{StaticResource SecondaryTextBlock}" />
+                <TextBlock Text="{Binding CountDoctors}"
+                           Style="{StaticResource PrimaryTextBlock}" />
+                <TextBlock Text="   Пациентов в системе: "
+                           Style="{StaticResource SecondaryTextBlock}" />
+                <TextBlock Text="{Binding CountPatients}"
+                           Style="{StaticResource PrimaryTextBlock}" />
             </DockPanel>
-
         </Border>
     </Grid>
 </Page>

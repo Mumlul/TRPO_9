@@ -9,6 +9,7 @@ namespace TRPO_8
     /// </summary>
     public partial class App : Application
     {
+        public static string CurrentTheme { get; set; } = "Styles/Themes/LightTheme.xaml";
     }
 
 }

@@ -89,3 +89,38 @@ C:\Users\st310-07\Desktop\Новая папка\TRPO_8\TRPO_8\obj\Debug\net8.0-w
 C:\Users\st310-07\Desktop\Новая папка\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
 C:\Users\st310-07\Desktop\Новая папка\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
 C:\Users\st310-07\Desktop\Новая папка\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.exe
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.deps.json
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.runtimeconfig.json
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Styles\Themes\DarkTheme.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Styles\Themes\LightTheme.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\pr.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\AddPatient.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\MainPage.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\Reception.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\RegisterDoctor.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.cache
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.lref
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\App.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\AddPatient.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\MainPage.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\Reception.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\Pages\RegisterDoctor.baml
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.g.resources
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfoInputs.cache
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfo.cs
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.sourcelink.json
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\refint\TRPO_8.dll
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
+C:\Users\ПК\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
