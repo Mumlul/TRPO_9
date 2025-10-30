@@ -1,0 +1,16 @@
+{
+  "ID": 7226702,
+  "FullName": "dasd asd asdasd",
+  "Name": "asd",
+  "LastName": "dasd",
+  "MiddleName": "asdasd",
+  "Birthday": "2025-10-30T09:37:57.4005539+05:00",
+  "Receprions": [
+    {
+      "Date": "2025-10-30T09:38:08.466727+05:00",
+      "DoctorID": 74901,
+      "Diagons": "dsadasd",
+      "Recomendation": "asdasdada"
+    }
+  ]
+}

@@ -25,19 +25,19 @@
             <StackPanel Name="data" Grid.Row="1" Style="{StaticResource SectionContainer}">
                 <TextBlock Text="Текущий доктор" Style="{StaticResource FormSectionTitle}" />
                 <UniformGrid Columns="2" Style="{StaticResource UniformGridSpacing}">
-                    <StackPanel>
+                    <StackPanel Style="{StaticResource Nado}">
                         <TextBlock Text="Фамилия:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding LastName}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
-                    <StackPanel>
+                    <StackPanel Style="{StaticResource Nado}">
                         <TextBlock Text="Имя:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
-                    <StackPanel>
+                    <StackPanel Style="{StaticResource Nado}">
                         <TextBlock Text="Отчество:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
-                    <StackPanel>
+                    <StackPanel Style="{StaticResource Nado}">
                         <TextBlock Text="Специальность:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding Specialisation}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
@@ -48,20 +48,19 @@
                 <StackPanel>
                     <TextBlock Text="Пациент" Style="{StaticResource FormSectionTitle}"/>
                     <UniformGrid Columns="2" Style="{StaticResource UniformGridSpacing}">
-                        <StackPanel>
+                        <StackPanel Style="{StaticResource Nado}">
                             <TextBlock Text="Фамилия:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding LastName}" MouseDown="Edit_patient" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
-                        <StackPanel>
+                        <StackPanel Style="{StaticResource Nado}">
                             <TextBlock Text="Имя:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
-                        <StackPanel>
+                        <StackPanel Style="{StaticResource Nado}">
                             <TextBlock Text="Отчество:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
-
-                        <StackPanel>
+                        <StackPanel Style="{StaticResource Nado}">
                             <TextBlock Text="Дата рождения:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding Birthday, StringFormat='{}{0:dd.MM.yyyy}'}" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
@@ -74,16 +73,16 @@
                     <TextBlock Text="Новый приём" Style="{StaticResource FormSectionTitle}"/>
 
                     <DockPanel Style="{StaticResource FormRow}">
-                        <TextBlock Text="Диагноз:" Style="{StaticResource FormLabel}" Width="120"/>
+                        <TextBlock Text="Диагноз:" Style="{StaticResource FormLabel}" />
                         <TextBox x:Name="Diagnos" Style="{StaticResource FormMultilineTextBox}"/>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormRow}">
-                        <TextBlock Text="Рекомендации:" Style="{StaticResource FormLabel}" Width="120"/>
+                        <TextBlock Text="Рекомендации:" Style="{StaticResource FormLabel}" />
                         <TextBox x:Name="Recomendations" Style="{StaticResource FormMultilineTextBox}"/>
                     </DockPanel>
 
-                    <Button Content="Добавить приём" Style="{StaticResource AddButton}" Height="35" Click="ButtonBase_OnClick"/>
+                    <Button Content="Добавить приём" Style="{StaticResource AddButton}"  Click="ButtonBase_OnClick"/>
                 </StackPanel>
             </Border>
 
@@ -92,7 +91,7 @@
                     <TextBlock Text="История приёмов" Style="{StaticResource FormSectionTitle}"/>
                     <ListView x:Name="Spisok"
                               ItemsSource="{Binding ReceptionsList}"
-                              MaxHeight="300"
+                              Style="{StaticResource MainListView}"
                               >
                         <ListView.ItemTemplate>
                             <DataTemplate>

@@ -17,21 +17,25 @@
     <SolidColorBrush x:Key="ButtonStandardHoverBrush" Color="{StaticResource ButtonStandardHoverColor}"/>
     <SolidColorBrush x:Key="ButtonStandardPressedBrush" Color="{StaticResource ButtonStandardPressedColor}"/>
 
-    <Color x:Key="ButtonAddNormalColor">#10B981</Color>
-    <Color x:Key="ButtonAddHoverColor">#059669</Color>
-    <Color x:Key="ButtonAddPressedColor">#047857</Color>
+    <Color x:Key="ButtonAddNormalColor">#EF4444</Color>
+    <Color x:Key="ButtonAddHoverColor">#DC2626</Color>
+    <Color x:Key="ButtonAddPressedColor">#B91C1C</Color>
     <SolidColorBrush x:Key="ButtonAddNormalBrush" Color="{StaticResource ButtonAddNormalColor}"/>
     <SolidColorBrush x:Key="ButtonAddHoverBrush" Color="{StaticResource ButtonAddHoverColor}"/>
     <SolidColorBrush x:Key="ButtonAddPressedBrush" Color="{StaticResource ButtonAddPressedColor}"/>
 
-    <Color x:Key="ButtonDeleteNormalColor">#EF4444</Color>
-    <Color x:Key="ButtonDeleteHoverColor">#DC2626</Color>
-    <Color x:Key="ButtonDeletePressedColor">#B91C1C</Color>
+    <Color x:Key="ButtonDeleteNormalColor">#10B981</Color> 
+    <Color x:Key="ButtonDeleteHoverColor">#059669</Color>
+    <Color x:Key="ButtonDeletePressedColor">#047857</Color> 
     <SolidColorBrush x:Key="ButtonDeleteNormalBrush" Color="{StaticResource ButtonDeleteNormalColor}"/>
     <SolidColorBrush x:Key="ButtonDeleteHoverBrush" Color="{StaticResource ButtonDeleteHoverColor}"/>
     <SolidColorBrush x:Key="ButtonDeletePressedBrush" Color="{StaticResource ButtonDeletePressedColor}"/>
 
     <Color x:Key="AccentColor">#3B82F6</Color>
     <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
-    
+
+
+    <Color x:Key="kk">#000000</Color>
+    <SolidColorBrush x:Key="kkk" Color="{StaticResource kk}"/>
+
 </ResourceDictionary>

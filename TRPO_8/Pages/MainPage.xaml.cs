@@ -25,7 +25,7 @@ namespace TRPO_8.Pages
     /// 
     public partial class MainPage : Page
     {
-        public ObservableCollection<Patient> Patients { get; set; } = new();
+        public ObservableCollection<Patient> Patients { get; set; } = new ObservableCollection<Patient>();
         public Statistic Statistics { get; set; } = new Statistic();
         public Patient? SelectedPatient { get; set; }
         private string patientspath = System.IO.Path.Combine(AppContext.BaseDirectory, @"files\patients");
@@ -74,6 +74,25 @@ namespace TRPO_8.Pages
         {
             NavigationService.Navigate(new AddPatient(Patients,SelectedPatient));
             Statistics.Update();
+        }
+
+        private void DeletePatient(object sender,RoutedEventArgs e)
+        {
+            var patientToRemove = Patients.FirstOrDefault(item => item.ID == SelectedPatient.ID);
+            if (patientToRemove != null)
+            {
+                string patientFile = System.IO.Path.Combine(patientspath, $"P_{patientToRemove.ID}.json");
+                if (File.Exists(patientFile))
+                {
+                    File.Delete(patientFile);
+                }
+
+                Patients.Remove(patientToRemove);
+                Statistics.Update();
+            }
+
+
+
         }
     }
 }

@@ -5,7 +5,6 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
       Title="MainPage"
       Background="{DynamicResource WindowBackgroundBrush}">
 
@@ -31,19 +30,19 @@
                            Style="{StaticResource PrimaryTextBlock}"/>
                 <StackPanel>
                     <DockPanel>
-                        <TextBlock Text="Фамилия:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="Фамилия:"  Style="{StaticResource SecondaryTextBlock}"/>
                         <TextBlock Text="{Binding LastName}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Имя:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="Имя:"  Style="{StaticResource SecondaryTextBlock}"/>
                         <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Отчество:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="Отчество:"  Style="{StaticResource SecondaryTextBlock}"/>
                         <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Специальность:" Width="90" Style="{StaticResource SecondaryTextBlock}"/>
+                        <TextBlock Text="Специальность:"  Style="{StaticResource SecondaryTextBlock}"/>
                         <TextBlock Text="{Binding Specialisation}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                 </StackPanel>
@@ -55,24 +54,27 @@
             <ListView ItemsSource="{Binding Patients}"
                       SelectedItem="{Binding SelectedPatient}"
                       MouseDoubleClick="Add_Reception"
-                     >
+                      Style="{StaticResource MainListView}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Идентификатор: " Style="{StaticResource SecondaryTextBlock}"/>
-                                <TextBlock Text="{Binding ID}" Style="{StaticResource PrimaryTextBlock}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="ФИО: " Style="{StaticResource SecondaryTextBlock}"/>
-                                <TextBlock Text="{Binding FullName}" Style="{StaticResource PrimaryTextBlock}"/>
+                        <Border Style="{StaticResource ListItemBorder}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Идентификатор: " Style="{StaticResource SecondaryTextBlock}"/>
+                                    <TextBlock Text="{Binding ID}" Style="{StaticResource PrimaryTextBlock}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="ФИО: " Style="{StaticResource SecondaryTextBlock}"/>
+                                    <TextBlock Text="{Binding FullName}" Style="{StaticResource PrimaryTextBlock}"/>
 
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Дата рождения: " Style="{StaticResource SecondaryTextBlock}"/>
+                                    <TextBlock Text="{Binding BirthDate}" Style="{StaticResource PrimaryTextBlock}"/>
+                                </StackPanel>
                             </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Дата рождения: " Style="{StaticResource SecondaryTextBlock}"/>
-                                <TextBlock Text="{Binding BirthDate}" Style="{StaticResource PrimaryTextBlock}"/>
-                            </StackPanel>
-                        </StackPanel>
+                        </Border>
+                        
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -88,6 +90,7 @@
                     Click="Change_data"/>
             <Button Content="Удалить"
                     Style="{StaticResource DeleteButton}"
+                    Click="DeletePatient"
                     />
         </StackPanel>
 

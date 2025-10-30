@@ -22,9 +22,9 @@ namespace TRPO_8
             MainFrame.Navigate(new LoginPage());
         }
 
-        /*private void ChangeThem(object sender, RoutedEventArgs e)
+        private void ChangeThem(object sender, RoutedEventArgs e)
         {
             ThemeHelper.Toggle();
-        }*/
+        }
     }
 }

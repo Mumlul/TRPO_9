@@ -5,8 +5,8 @@ namespace TRPO_8.Service;
 static class ThemeHelper
 {
     private static readonly string[] _themePath = {
-        "Styles/Colors/DefaultColors.xaml",
-        "Styles/Colors/DarkTheme.xaml"
+        "Styles/Themes/LightTheme.xaml",
+        "Styles/themes/DarkTheme.xaml"
     };
     public static string Current
     {

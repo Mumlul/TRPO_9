@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="123" Click="ChangeThem"></MenuItem>
+        </Menu>
+
+        <Frame Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden"/>
+
     </Grid>
 </Window>
