@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\styles\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\styles\\themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\themes\\lighttheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\reception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\reception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\styles\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\styles\\ui\\pr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\ui\\pr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\addpatient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\addpatient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\registerdoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\registerdoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\reception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\reception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\registerdoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\registerdoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\pages\\addpatient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\addpatient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|c:\\users\\st310-07\\desktop\\trpo_9\\trpo_8\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5EA8714-E281-4E3F-AABE-6BCC8A9CD5E1}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,23 +46,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\MainWindow.xaml",
+              "RelativeToolTip": "TRPO_8\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-30T05:27:46.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DarkTheme.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
-              "ToolTip": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Styles\\Themes\\DarkTheme.xaml*",
-              "RelativeToolTip": "TRPO_8\\Styles\\Themes\\DarkTheme.xaml*",
+              "ToolTip": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
+              "RelativeToolTip": "TRPO_8\\Styles\\Themes\\DarkTheme.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-30T05:23:49.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LightTheme.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Styles\\Themes\\LightTheme.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Styles\\Themes\\LightTheme.xaml",
@@ -70,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Reception.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Pages\\Reception.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Pages\\Reception.xaml",
@@ -82,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Pages\\MainPage.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Pages\\MainPage.xaml",
@@ -94,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "RegisterDoctor.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Pages\\RegisterDoctor.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Pages\\RegisterDoctor.xaml",
@@ -118,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AddPatient.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Pages\\AddPatient.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Pages\\AddPatient.xaml",
@@ -130,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "pr.xaml",
               "DocumentMoniker": "C:\\Users\\st310-07\\Desktop\\TRPO_9\\TRPO_8\\Styles\\UI\\pr.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Styles\\UI\\pr.xaml",
