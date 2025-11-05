@@ -30,20 +30,20 @@
                            Style="{StaticResource PrimaryTextBlock}"/>
                 <StackPanel>
                     <DockPanel>
-                        <TextBlock Text="Фамилия:"  Style="{StaticResource SecondaryTextBlock}"/>
-                        <TextBlock Text="{Binding LastName}" Style="{StaticResource PrimaryTextBlock}"/>
+                        <!--<TextBlock Text="Фамилия:"  Style="{StaticResource SecondaryTextBlock}" />-->
+                        <TextBlock Text="{Binding LastName,StringFormat='Фамилия: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Имя:"  Style="{StaticResource SecondaryTextBlock}"/>
-                        <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
+                        <!--<TextBlock Text="Имя:"  Style="{StaticResource SecondaryTextBlock}"/>-->
+                        <TextBlock Text="{Binding Name,StringFormat='Имя: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Отчество:"  Style="{StaticResource SecondaryTextBlock}"/>
-                        <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
+                        <!--<TextBlock Text="Отчество:"  Style="{StaticResource SecondaryTextBlock}"/>-->
+                        <TextBlock Text="{Binding MiddleName,StringFormat='Отчетсво: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Специальность:"  Style="{StaticResource SecondaryTextBlock}"/>
-                        <TextBlock Text="{Binding Specialisation}" Style="{StaticResource PrimaryTextBlock}"/>
+                        <!--<TextBlock Text="Специальность:"  Style="{StaticResource SecondaryTextBlock}"/>-->
+                        <TextBlock Text="{Binding Specialisation,StringFormat='Специальность: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                 </StackPanel>
             </StackPanel>

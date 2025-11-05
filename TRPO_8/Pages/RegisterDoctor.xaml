@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:validators="clr-namespace:TRPO_8.ValidationRules"
       mc:Ignorable="d" 
       Title="RegisterDoctor"
       Background="{DynamicResource WindowBackgroundBrush}">
@@ -15,27 +16,120 @@
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Фамилия" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding LastName}" Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Surname" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="LastName">
+                                        <Binding.ValidationRules>
+                                            <validators:TextRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Surname,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Style="{StaticResource ErrorMessage}" Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                        
+                       
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Имя" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding Name}" Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Name" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="Name">
+                                        <Binding.ValidationRules>
+                                            <validators:TextRules></validators:TextRules>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Name,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Style="{StaticResource ErrorMessage}" Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Отчество" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding MiddleName}" Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="MiddleName" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="MiddleName">
+                                        <Binding.ValidationRules>
+                                            <validators:TextRules></validators:TextRules>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=MiddleName}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Style="{StaticResource ErrorMessage}" Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Специальность" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding Specialisation}" Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Specialisation" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="Specialisation">
+                                        <Binding.ValidationRules>
+                                            <validators:TextRules></validators:TextRules>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Specialisation}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Style="{StaticResource ErrorMessage}" Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Пароль" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding Password}" Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Password" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="Password">
+                                        <Binding.ValidationRules>
+                                            <validators:PasswordRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Password,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            
+                        </StackPanel>
                     </DockPanel>
 
                     <Button Content="Сохранить доктора" Style="{StaticResource SaveButton}" Click="Add_Doctor"/>

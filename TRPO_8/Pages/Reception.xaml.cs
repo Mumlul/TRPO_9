@@ -39,6 +39,20 @@ public partial class Reception : Page
         Spisok.DataContext = this;
         _userList = userList;
         data.DataContext = _currentDoctor;
+        SearchLastAppointment();
+    }
+
+    private void SearchLastAppointment()
+    {
+        if (SelectedPatient?.Receprions != null && SelectedPatient.Receprions.Any())
+        {
+            var lastReception = SelectedPatient.Receprions.Last();
+            LastAppointment.Text = lastReception.Date.ToString("dd.MM.yyyy");
+        }
+        else
+        {
+            LastAppointment.Text = "Приемов нет";
+        }
     }
 
     private void LoadSpisok()

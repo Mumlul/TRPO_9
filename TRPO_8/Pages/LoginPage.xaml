@@ -3,27 +3,63 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:validators="clr-namespace:TRPO_8.ValidationRules"
       xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d" 
       Title="LoginPage"
       Background="{DynamicResource WindowBackgroundBrush}"
       >
 
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="1">
-            <TextBlock Text="Авторизация доктора" Style="{StaticResource PrimaryTextBlock}"/>
+    <Grid Style="{StaticResource GridBlock}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+       
+        <TextBlock Text="Авторизация доктора" Style="{StaticResource PageTitle}"/>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            
             <DockPanel >
-                <TextBlock Text="ID доктора"  Style="{StaticResource PrimaryTextBlock}"/>
-                <TextBox Text="{Binding ID}" Style="{StaticResource PrimaryTextBox}"/>
+                <TextBlock Text="ID"  Style="{StaticResource PrimaryTextBlock}"/>
+                <StackPanel Style="{StaticResource Vertical}">
+                    <TextBox x:Name="IdTextbox" Style="{StaticResource PrimaryTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="ID" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <validators:NumberRules />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <ItemsControl ItemsSource="{Binding ElementName=IdTextbox, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Style="{StaticResource ErrorMessage}" Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
             </DockPanel>
             <DockPanel >
                 <TextBlock Text="Пароль" Style="{StaticResource PrimaryTextBlock}"/>
-                <TextBox Text="{Binding Password}" Style="{StaticResource PrimaryTextBox}"/>
+                <StackPanel Style="{StaticResource Vertical}">
+                    <TextBox x:Name="PasswordTb" Style="{StaticResource PrimaryTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <validators:NumberRules/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <ItemsControl ItemsSource="{Binding ElementName=PasswordTb,Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Style="{StaticResource ErrorMessage}" Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
             </DockPanel>
             <Button Click="LoginDoctor_Click" Content="Войти" Style="{StaticResource StandardButton}"/>
             <TextBlock Text="Зарегистрироваться" MouseDown="Register" Style="{StaticResource SecondaryTextBlock}"/>

@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:validarions="clr-namespace:TRPO_8.ValidationRules"
       xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d" 
       Title="AddPatient"
@@ -25,29 +26,95 @@
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Фамилия" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"
-                                 Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Surname" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="LastName">
+                                        <Binding.ValidationRules>
+                                            <validarions:TextRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Surname,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Имя" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
-                                 Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Name" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="Name">
+                                        <Binding.ValidationRules>
+                                            <validarions:TextRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Name,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Отчество" Style="{StaticResource FormLabel}"/>
-                        <TextBox Text="{Binding MiddleName, UpdateSourceTrigger=PropertyChanged}"
-                                 Style="{StaticResource FormTextBox}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="MiddleName" Style="{StaticResource FormTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="MiddleName">
+                                        <Binding.ValidationRules>
+                                            <validarions:TextRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=MiddleName,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormFieldPanel}">
                         <TextBlock Text="Дата рождения" Style="{StaticResource FormLabel}"/>
-                        <DatePicker SelectedDate="{Binding Birthday, UpdateSourceTrigger=PropertyChanged}"
-                                    
-                                    Style="{StaticResource FormDatePicker}"/>
+                        
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <DatePicker x:Name="Birthday" Style="{StaticResource FormDatePicker}">
+                                <DatePicker.SelectedDate>
+                                    <Binding Path="Birthday">
+                                        <Binding.ValidationRules>
+                                            <validarions:DataRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </DatePicker.SelectedDate>
+                            </DatePicker>
+                            <ItemsControl ItemsSource="{Binding ElementName=Birthday,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}" TextWrapping="Wrap"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </DockPanel>
-
                     <Button Click="AddPatient_Click"
                             Style="{StaticResource SaveButton}"/>
                 </StackPanel>

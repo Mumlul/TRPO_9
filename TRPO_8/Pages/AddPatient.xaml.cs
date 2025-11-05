@@ -58,7 +58,7 @@ namespace TRPO_8.Pages
                 {
                     NewPatient.FullName = $"{NewPatient.LastName} {NewPatient.Name} {NewPatient.MiddleName}";
                     NewPatient.ID = GeneratePatientId();
-
+                    NewPatient.Receprions = NewPatient.Receprions ?? new List<Receprion>();
                     filename = $"P_{NewPatient.ID}.json";
                     filePath = System.IO.Path.Combine(path, filename);
 
@@ -74,7 +74,7 @@ namespace TRPO_8.Pages
                         FullName = NewPatient.FullName,
                         ID = NewPatient.ID,
                         Birthday = NewPatient.Birthday,
-                        Receprions = new List<Receprion>()
+                        Receprions = new List<Receprion>() {}
                     };
                     _userList.Add(addedPatient);
                     NavigationService.GoBack();

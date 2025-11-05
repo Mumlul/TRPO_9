@@ -4,6 +4,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:convertors="clr-namespace:TRPO_8.Converters"
       mc:Ignorable="d"
       Title="Reception"
       Background="{DynamicResource WindowBackgroundBrush}">
@@ -25,19 +26,19 @@
             <StackPanel Name="data" Grid.Row="1" Style="{StaticResource SectionContainer}">
                 <TextBlock Text="Текущий доктор" Style="{StaticResource FormSectionTitle}" />
                 <UniformGrid Columns="2" Style="{StaticResource UniformGridSpacing}">
-                    <StackPanel Style="{StaticResource Nado}">
+                    <StackPanel Style="{StaticResource Horizontal}">
                         <TextBlock Text="Фамилия:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding LastName}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
-                    <StackPanel Style="{StaticResource Nado}">
+                    <StackPanel Style="{StaticResource Horizontal}">
                         <TextBlock Text="Имя:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
-                    <StackPanel Style="{StaticResource Nado}">
+                    <StackPanel Style="{StaticResource Horizontal}">
                         <TextBlock Text="Отчество:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
-                    <StackPanel Style="{StaticResource Nado}">
+                    <StackPanel Style="{StaticResource Horizontal}">
                         <TextBlock Text="Специальность:" Style="{StaticResource FormLabel}"/>
                         <TextBlock Text="{Binding Specialisation}" Style="{StaticResource PrimaryTextBlock}"/>
                     </StackPanel>
@@ -47,22 +48,42 @@
             <Border Grid.Row="2" Style="{StaticResource FormBorder}">
                 <StackPanel>
                     <TextBlock Text="Пациент" Style="{StaticResource FormSectionTitle}"/>
-                    <UniformGrid Columns="2" Style="{StaticResource UniformGridSpacing}">
-                        <StackPanel Style="{StaticResource Nado}">
+                    <UniformGrid Columns="3" Style="{StaticResource UniformGridSpacing}">
+                        <StackPanel Style="{StaticResource Horizontal}">
                             <TextBlock Text="Фамилия:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding LastName}" MouseDown="Edit_patient" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
-                        <StackPanel Style="{StaticResource Nado}">
+                        <StackPanel Style="{StaticResource Horizontal}">
                             <TextBlock Text="Имя:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding Name}" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
-                        <StackPanel Style="{StaticResource Nado}">
+                        <StackPanel Style="{StaticResource Horizontal}">
                             <TextBlock Text="Отчество:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding MiddleName}" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
-                        <StackPanel Style="{StaticResource Nado}">
+                        <StackPanel Style="{StaticResource Horizontal}">
                             <TextBlock Text="Дата рождения:" Style="{StaticResource FormLabel}"/>
                             <TextBlock Text="{Binding Birthday, StringFormat='{}{0:dd.MM.yyyy}'}" Style="{StaticResource PrimaryTextBlock}"/>
+                        </StackPanel>
+                        
+                        <!--Через convert-->
+                        <StackPanel Style="{StaticResource Horizontal}">
+                            <TextBlock Text="Совершеннолетний:" Style="{StaticResource FormLabel}"/>
+                            
+                            <TextBlock Style="{StaticResource PrimaryTextBlock}">
+                                <TextBlock.Text>
+                                    <Binding Path="Birthday">
+                                        <Binding.Converter>
+                                            <convertors:AgeConverter/>
+                                        </Binding.Converter>
+                                    </Binding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                        
+                        <StackPanel Style="{StaticResource Horizontal}">
+                            <TextBlock Text="Последний прием:" Style="{StaticResource FormLabel}"/>
+                            <TextBlock Name="LastAppointment"  Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
                     </UniformGrid>
                 </StackPanel>
