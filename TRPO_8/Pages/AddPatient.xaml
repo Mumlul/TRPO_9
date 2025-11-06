@@ -30,7 +30,7 @@
                         <StackPanel Style="{StaticResource Vertical}">
                             <TextBox x:Name="Surname" Style="{StaticResource FormTextBox}">
                                 <TextBox.Text>
-                                    <Binding Path="LastName">
+                                    <Binding Path="LastName" UpdateSourceTrigger="PropertyChanged">
                                         <Binding.ValidationRules>
                                             <validarions:TextRules/>
                                         </Binding.ValidationRules>
@@ -53,7 +53,7 @@
                         <StackPanel Style="{StaticResource Vertical}">
                             <TextBox x:Name="Name" Style="{StaticResource FormTextBox}">
                                 <TextBox.Text>
-                                    <Binding Path="Name">
+                                    <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
                                         <Binding.ValidationRules>
                                             <validarions:TextRules/>
                                         </Binding.ValidationRules>
@@ -76,7 +76,7 @@
                         <StackPanel Style="{StaticResource Vertical}">
                             <TextBox x:Name="MiddleName" Style="{StaticResource FormTextBox}">
                                 <TextBox.Text>
-                                    <Binding Path="MiddleName">
+                                    <Binding Path="MiddleName" UpdateSourceTrigger="PropertyChanged">
                                         <Binding.ValidationRules>
                                             <validarions:TextRules/>
                                         </Binding.ValidationRules>
@@ -99,7 +99,7 @@
                         <StackPanel Style="{StaticResource Vertical}">
                             <DatePicker x:Name="Birthday" Style="{StaticResource FormDatePicker}">
                                 <DatePicker.SelectedDate>
-                                    <Binding Path="Birthday">
+                                    <Binding Path="Birthday" UpdateSourceTrigger="PropertyChanged">
                                         <Binding.ValidationRules>
                                             <validarions:DataRules/>
                                         </Binding.ValidationRules>

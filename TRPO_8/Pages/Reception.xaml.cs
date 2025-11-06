@@ -14,6 +14,9 @@ public partial class Reception : Page
     private string patientsPath = System.IO.Path.Combine(AppContext.BaseDirectory, @"files\patients");
     public ObservableCollection<Receprion> ReceptionsList { get; set; } = new();
     public ObservableCollection<Patient> _userList;
+
+    public Receprion Receptions { get; set; } = new Receprion();
+
     public Patient SelectedPatient
     {
         get=>_patient;
@@ -40,6 +43,7 @@ public partial class Reception : Page
         _userList = userList;
         data.DataContext = _currentDoctor;
         SearchLastAppointment();
+        Add_Apointment.DataContext = Receptions;
     }
 
     private void SearchLastAppointment()
@@ -83,13 +87,18 @@ public partial class Reception : Page
                 patientToSave.Receprions = new List<Receprion>();
             }
 
-            patientToSave.Receprions.Add(new Receprion()
+            Receptions.Date= DateTime.Now;
+            Receptions.DoctorID = CurrentDoctor.ID;
+
+            patientToSave.Receprions.Add(Receptions);
+
+            /*patientToSave.Receprions.Add(new Receprion()
             {
                 Date = DateTime.Now,
                 Diagons = Diagnos.Text, 
                 Recomendation = Recomendations.Text, 
                 DoctorID = CurrentDoctor.ID
-            });
+            });*/
 
             string updatedJson = JsonSerializer.Serialize(patientToSave, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, updatedJson);

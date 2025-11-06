@@ -31,6 +31,10 @@
                 <StackPanel>
                     <DockPanel>
                         <!--<TextBlock Text="Фамилия:"  Style="{StaticResource SecondaryTextBlock}" />-->
+                        <TextBlock Text="{Binding ID,StringFormat='ID:{0:##(###)}'}" Style="{StaticResource PrimaryTextBlock}"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <!--<TextBlock Text="Фамилия:"  Style="{StaticResource SecondaryTextBlock}" />-->
                         <TextBlock Text="{Binding LastName,StringFormat='Фамилия: {0}'}" Style="{StaticResource PrimaryTextBlock}"/>
                     </DockPanel>
                     <DockPanel>
@@ -70,7 +74,7 @@
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Дата рождения: " Style="{StaticResource SecondaryTextBlock}"/>
-                                    <TextBlock Text="{Binding BirthDate}" Style="{StaticResource PrimaryTextBlock}"/>
+                                    <TextBlock Text="{Binding Birthday}" Style="{StaticResource PrimaryTextBlock}"/>
                                 </StackPanel>
                             </StackPanel>
                         </Border>

@@ -1,15 +1,33 @@
 {
   "ID": 9598293,
-  "FullName": "a a a",
-  "Name": "a",
-  "LastName": "a",
-  "MiddleName": "a",
+  "FullName": "asd asd asd",
+  "Name": "asd",
+  "LastName": "asd",
+  "MiddleName": "asd",
   "Birthday": "2025-11-06T03:18:42.574547+05:00",
   "Receprions": [
     {
       "Date": "2025-11-06T03:24:51.1960748+05:00",
       "DoctorID": 74901,
       "Diagons": "das",
+      "Recomendation": "asd"
+    },
+    {
+      "Date": "2025-11-06T08:52:22.7938201+05:00",
+      "DoctorID": 74901,
+      "Diagons": "dasda",
+      "Recomendation": "asdasd"
+    },
+    {
+      "Date": "2025-11-06T09:53:10.5289329+05:00",
+      "DoctorID": 74901,
+      "Diagons": "\u0444\u044B\u0432",
+      "Recomendation": " \u0444\u044B\u0432"
+    },
+    {
+      "Date": "2025-11-06T10:00:04.6194295+05:00",
+      "DoctorID": 74901,
+      "Diagons": "asd",
       "Recomendation": "asd"
     }
   ]

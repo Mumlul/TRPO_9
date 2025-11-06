@@ -24,7 +24,7 @@
                 <StackPanel Style="{StaticResource Vertical}">
                     <TextBox x:Name="IdTextbox" Style="{StaticResource PrimaryTextBox}">
                         <TextBox.Text>
-                            <Binding Path="ID" UpdateSourceTrigger="PropertyChanged">
+                            <Binding Path="ID"  UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
                                     <validators:NumberRules />
                                 </Binding.ValidationRules>
@@ -45,9 +45,9 @@
                 <StackPanel Style="{StaticResource Vertical}">
                     <TextBox x:Name="PasswordTb" Style="{StaticResource PrimaryTextBox}">
                         <TextBox.Text>
-                            <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                            <Binding Path="Password"  UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
-                                    <validators:NumberRules/>
+                                    <validators:EmptyRules/>
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
@@ -61,7 +61,23 @@
                     </ItemsControl>
                 </StackPanel>
             </DockPanel>
-            <Button Click="LoginDoctor_Click" Content="Войти" Style="{StaticResource StandardButton}"/>
+            <Button Click="LoginDoctor_Click" Content="Войти">
+                <Button.Style>
+                    <Style BasedOn="{StaticResource StandardButton}" TargetType="Button">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=IdTextbox, Path=(Validation.HasError)}" Value="True">
+                                <Setter Property="IsEnabled" Value="False"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding ElementName=PasswordTb,Path=(Validation.HasError)}" Value="True">
+                                <Setter Property="IsEnabled" Value="False"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
             <TextBlock Text="Зарегистрироваться" MouseDown="Register" Style="{StaticResource SecondaryTextBlock}"/>
         </StackPanel>
     </Grid>

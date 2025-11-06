@@ -5,6 +5,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:convertors="clr-namespace:TRPO_8.Converters"
+      xmlns:velidotors="clr-namespace:TRPO_8.ValidationRules"
       mc:Ignorable="d"
       Title="Reception"
       Background="{DynamicResource WindowBackgroundBrush}">
@@ -66,7 +67,6 @@
                             <TextBlock Text="{Binding Birthday, StringFormat='{}{0:dd.MM.yyyy}'}" Style="{StaticResource PrimaryTextBlock}"/>
                         </StackPanel>
                         
-                        <!--Через convert-->
                         <StackPanel Style="{StaticResource Horizontal}">
                             <TextBlock Text="Совершеннолетний:" Style="{StaticResource FormLabel}"/>
                             
@@ -89,18 +89,57 @@
                 </StackPanel>
             </Border>
 
-            <Border Grid.Row="3" Style="{StaticResource FormBorder}">
+            <Border Grid.Row="3" Style="{StaticResource FormBorder}" Name="Add_Apointment">
                 <StackPanel>
                     <TextBlock Text="Новый приём" Style="{StaticResource FormSectionTitle}"/>
 
                     <DockPanel Style="{StaticResource FormRow}">
                         <TextBlock Text="Диагноз:" Style="{StaticResource FormLabel}" />
-                        <TextBox x:Name="Diagnos" Style="{StaticResource FormMultilineTextBox}"/>
+
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Diagnos" Style="{StaticResource FormMultilineTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="Diagons" UpdateSourceTrigger="PropertyChanged">
+                                        <Binding.ValidationRules>
+                                            <velidotors:TextRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Diagnos,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                        
+                        
                     </DockPanel>
 
                     <DockPanel Style="{StaticResource FormRow}">
                         <TextBlock Text="Рекомендации:" Style="{StaticResource FormLabel}" />
-                        <TextBox x:Name="Recomendations" Style="{StaticResource FormMultilineTextBox}"/>
+
+                        <StackPanel Style="{StaticResource Vertical}">
+                            <TextBox x:Name="Recomendations" Style="{StaticResource FormMultilineTextBox}">
+                                <TextBox.Text>
+                                    <Binding Path="Recomendation" UpdateSourceTrigger="PropertyChanged">
+                                        <Binding.ValidationRules>
+                                            <velidotors:TextRules/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <ItemsControl ItemsSource="{Binding ElementName=Recomendations,Path=(Validation.Errors)}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Style="{StaticResource ErrorMessage}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                        
                     </DockPanel>
 
                     <Button Content="Добавить приём" Style="{StaticResource AddButton}"  Click="ButtonBase_OnClick"/>

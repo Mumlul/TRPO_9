@@ -195,3 +195,4 @@ C:\Users\ПК\Desktop\TRPO_10\TRPO_8\obj\Debug\net8.0-windows\refint\TRPO_8.dll
 C:\Users\ПК\Desktop\TRPO_10\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
 C:\Users\ПК\Desktop\TRPO_10\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
 C:\Users\ПК\Desktop\TRPO_10\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
+C:\Users\st310-07\Desktop\TRPO_9\TRPO_8\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
